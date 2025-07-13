@@ -13,7 +13,6 @@ import {
   Shield, 
   TrendingUp, 
   Mail, 
-  Phone, 
   MapPin,
   Menu,
   X,
@@ -29,6 +28,7 @@ import heroImage from './assets/hero_background.jpg'
 import solarImage from './assets/solar_energy.jpg'
 import windImage from './assets/wind_energy.jpg'
 import sustainabilityImage from './assets/sustainability.jpg'
+import steinbockLogo from './assets/steinbock-logo.jpg'
 import './App.css'
 
 function App() {
@@ -69,7 +69,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <Building2 className="h-8 w-8 text-blue-600 mr-2" />
+              <img src={steinbockLogo} alt="Steinbock Digital" className="h-10 w-auto mr-3" />
               <span className="text-xl font-bold text-gray-900">Steinbock Digital</span>
             </div>
             
@@ -588,11 +588,7 @@ function App() {
               <div className="space-y-4 mb-8">
                 <div className="flex items-center">
                   <Mail className="h-5 w-5 text-blue-400 mr-3" />
-                  <span>contact@steinbock.digital</span>
-                </div>
-                <div className="flex items-center">
-                  <Phone className="h-5 w-5 text-blue-400 mr-3" />
-                  <span>+41 44 123 4567</span>
+                  <span>info@steinbockcapital.ch</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="h-5 w-5 text-blue-400 mr-3" />
