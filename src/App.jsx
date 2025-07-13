@@ -75,13 +75,13 @@ function App() {
             
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
-              <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-blue-600 transition-colors">Home</button>
-              <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-blue-600 transition-colors">About</button>
-              <button onClick={() => scrollToSection('projects')} className="text-gray-700 hover:text-blue-600 transition-colors">Our Projects</button>
-              <button onClick={() => scrollToSection('technology')} className="text-gray-700 hover:text-blue-600 transition-colors">Technology</button>
-              <button onClick={() => scrollToSection('sustainability')} className="text-gray-700 hover:text-blue-600 transition-colors">Sustainability</button>
-              <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-blue-600 transition-colors">Contact</button>
-              <Button onClick={() => scrollToSection('contact')} className="bg-blue-600 hover:bg-blue-700">
+              <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-green-600 transition-colors">Home</button>
+              <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-green-600 transition-colors">About</button>
+              <button onClick={() => scrollToSection('projects')} className="text-gray-700 hover:text-green-600 transition-colors">Our Projects</button>
+              <button onClick={() => scrollToSection('technology')} className="text-gray-700 hover:text-green-600 transition-colors">Technology</button>
+              <button onClick={() => scrollToSection('sustainability')} className="text-gray-700 hover:text-green-600 transition-colors">Sustainability</button>
+              <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-green-600 transition-colors">Contact</button>
+              <Button onClick={() => scrollToSection('contact')} className="bg-green-600 hover:bg-green-700">
                 Get Involved
               </Button>
             </div>
@@ -102,12 +102,12 @@ function App() {
               className="md:hidden bg-white border-t border-gray-200"
             >
               <div className="px-2 pt-2 pb-3 space-y-1">
-                <button onClick={() => scrollToSection('home')} className="block px-3 py-2 text-gray-700 hover:text-blue-600">Home</button>
-                <button onClick={() => scrollToSection('about')} className="block px-3 py-2 text-gray-700 hover:text-blue-600">About</button>
-                <button onClick={() => scrollToSection('projects')} className="block px-3 py-2 text-gray-700 hover:text-blue-600">Our Projects</button>
-                <button onClick={() => scrollToSection('technology')} className="block px-3 py-2 text-gray-700 hover:text-blue-600">Technology</button>
-                <button onClick={() => scrollToSection('sustainability')} className="block px-3 py-2 text-gray-700 hover:text-blue-600">Sustainability</button>
-                <button onClick={() => scrollToSection('contact')} className="block px-3 py-2 text-gray-700 hover:text-blue-600">Contact</button>
+                <button onClick={() => scrollToSection('home')} className="block px-3 py-2 text-gray-700 hover:text-green-600">Home</button>
+                <button onClick={() => scrollToSection('about')} className="block px-3 py-2 text-gray-700 hover:text-green-600">About</button>
+                <button onClick={() => scrollToSection('projects')} className="block px-3 py-2 text-gray-700 hover:text-green-600">Our Projects</button>
+                <button onClick={() => scrollToSection('technology')} className="block px-3 py-2 text-gray-700 hover:text-green-600">Technology</button>
+                <button onClick={() => scrollToSection('sustainability')} className="block px-3 py-2 text-gray-700 hover:text-green-600">Sustainability</button>
+                <button onClick={() => scrollToSection('contact')} className="block px-3 py-2 text-gray-700 hover:text-green-600">Contact</button>
               </div>
             </motion.div>
           )}
@@ -135,7 +135,7 @@ function App() {
             transition={{ duration: 0.8 }}
             className="text-5xl md:text-7xl font-bold mb-6"
           >
-            The Future of <span className="text-blue-400">Digital</span> Infrastructure
+             The Future of <span className="text-green-400">Digital</span> Infrastructure
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 30 }}
@@ -154,7 +154,7 @@ function App() {
             <Button 
               size="lg" 
               onClick={() => scrollToSection('about')}
-              className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-3"
+              className="bg-green-600 hover:bg-green-700 text-lg px-8 py-3"
             >
               Discover Our Vision
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -212,7 +212,7 @@ function App() {
               >
                 <Card className="text-center h-full hover:shadow-lg transition-shadow">
                   <CardHeader>
-                    <item.icon className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                    <item.icon className="h-12 w-12 text-green-600 mx-auto mb-4" />
                     <CardTitle className="text-xl">{item.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
@@ -236,7 +236,7 @@ function App() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="bg-white p-8 rounded-lg shadow-md"
               >
-                <div className="text-4xl font-bold text-blue-600 mb-2">{stat.number}</div>
+                <div className="text-4xl font-bold text-green-600 mb-2">{stat.number}</div>
                 <div className="text-gray-600 font-medium">{stat.label}</div>
               </motion.div>
             ))}
@@ -254,7 +254,7 @@ function App() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Our <span className="text-blue-600">Projects</span>
+              Our <span className="text-green-600">Projects</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Discover our portfolio of innovative technology infrastructure projects 
@@ -322,15 +322,15 @@ function App() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <Card className="h-full hover:shadow-xl transition-shadow border-2 border-blue-200">
-                <div className="relative h-64 overflow-hidden rounded-t-lg bg-gradient-to-br from-blue-600 to-green-600 flex items-center justify-center">
+              <Card className="h-full hover:shadow-xl transition-shadow border-2 border-green-200">
+                <div className="relative h-64 overflow-hidden rounded-t-lg bg-gradient-to-br from-green-600 to-green-700 flex items-center justify-center">
                   <div className="text-center text-white">
                     <Cpu className="h-16 w-16 mx-auto mb-4" />
                     <div className="text-2xl font-bold">Bolivian Green</div>
-                    <div className="text-blue-100">Renewable Bitcoin Mining</div>
+                    <div className="text-green-100">Renewable Bitcoin Mining</div>
                   </div>
                   <div className="absolute top-4 left-4">
-                    <Badge className="bg-blue-600 text-white">Development</Badge>
+                    <Badge className="bg-green-600 text-white">Development</Badge>
                   </div>
                   <div className="absolute top-4 right-4">
                     <Lock className="h-5 w-5 text-white" />
@@ -338,7 +338,7 @@ function App() {
                 </div>
                 <CardHeader>
                   <CardTitle className="text-2xl flex items-center">
-                    <Zap className="h-6 w-6 text-blue-600 mr-2" />
+                    <Zap className="h-6 w-6 text-green-600 mr-2" />
                     Project Bolivian Green
                   </CardTitle>
                   <CardDescription className="text-lg">
@@ -349,11 +349,11 @@ function App() {
                   <div className="space-y-4">
                     <div className="grid grid-cols-2 gap-4">
                       <div>
-                        <div className="text-2xl font-bold text-blue-600">500MW</div>
+                        <div className="text-2xl font-bold text-green-600">500MW</div>
                         <div className="text-sm text-gray-600">Target Capacity</div>
                       </div>
                       <div>
-                        <div className="text-2xl font-bold text-blue-600">$20-30</div>
+                        <div className="text-2xl font-bold text-green-600">$20-30</div>
                         <div className="text-sm text-gray-600">Energy Cost/MWh</div>
                       </div>
                     </div>
@@ -369,7 +369,7 @@ function App() {
                     </div>
                     <Button 
                       onClick={() => scrollToSection('bolivian-green')}
-                      className="w-full bg-blue-600 hover:bg-blue-700"
+                      className="w-full bg-green-600 hover:bg-green-700"
                     >
                       <Lock className="h-4 w-4 mr-2" />
                       Access Project Details
@@ -392,7 +392,7 @@ function App() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Powered by <span className="text-blue-600">Clean Energy</span>
+              Powered by <span className="text-green-600">Clean Energy</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Our innovative renewable energy infrastructure ensures sustainable operations 
@@ -450,7 +450,7 @@ function App() {
               className="order-2 lg:order-1"
             >
               <div className="flex items-center mb-4">
-                <Wind className="h-8 w-8 text-blue-500 mr-3" />
+                <Wind className="h-8 w-8 text-green-500 mr-3" />
                 <h3 className="text-3xl font-bold text-gray-900">Renewable Energy</h3>
               </div>
               <p className="text-lg text-gray-600 mb-6">
@@ -570,7 +570,7 @@ function App() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Join the <span className="text-blue-400">Digital Revolution</span>
+              Join the <span className="text-green-400">Digital Revolution</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Be part of the future of sustainable technology. Explore investment opportunities, 
@@ -587,26 +587,31 @@ function App() {
               <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
               <div className="space-y-4 mb-8">
                 <div className="flex items-center">
-                  <Mail className="h-5 w-5 text-blue-400 mr-3" />
-                  <span>info@steinbockcapital.ch</span>
+                  <Mail className="h-5 w-5 text-green-400 mr-3" />
+                  <span>info@steinbockfund.ch</span>
                 </div>
-                <div className="flex items-center">
-                  <MapPin className="h-5 w-5 text-blue-400 mr-3" />
-                  <span>Zurich, Switzerland</span>
+                <div className="flex items-start">
+                  <MapPin className="h-5 w-5 text-green-400 mr-3 mt-1" />
+                  <div className="flex flex-col">
+                    <span>Steinbock Financial Group SA</span>
+                    <span>Via Nuova 9</span>
+                    <span>7524 Zuoz</span>
+                    <span>Switzerland</span>
+                  </div>
                 </div>
               </div>
 
               <div className="grid sm:grid-cols-2 gap-4">
                 <Button 
                   size="lg" 
-                  className="bg-blue-600 hover:bg-blue-700 w-full"
+                  className="bg-green-600 hover:bg-green-700 w-full"
                 >
                   Investment Opportunities
                 </Button>
                 <Button 
                   size="lg" 
                   variant="outline" 
-                  className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-gray-900 w-full"
+                  className="border-green-400 text-green-400 hover:bg-green-400 hover:text-gray-900 w-full"
                 >
                   Partnership Inquiry
                 </Button>
@@ -641,7 +646,7 @@ function App() {
                     />
                     <Button 
                       type="submit" 
-                      className="w-full bg-blue-600 hover:bg-blue-700"
+                      className="w-full bg-green-600 hover:bg-green-700"
                     >
                       Subscribe to Updates
                     </Button>
@@ -659,7 +664,7 @@ function App() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center mb-4">
-                <Building2 className="h-6 w-6 text-blue-400 mr-2" />
+                <Building2 className="h-6 w-6 text-green-400 mr-2" />
                 <span className="text-lg font-bold">Steinbock Digital</span>
               </div>
               <p className="text-gray-400">
@@ -720,12 +725,12 @@ function BolivianGreenPage({ onBack }) {
 
   if (!isAuthenticated) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-900 to-green-900 flex items-center justify-center">
+      <div className="min-h-screen bg-gradient-to-br from-green-900 to-green-800 flex items-center justify-center">
         <div className="max-w-md w-full mx-4">
           <Card className="bg-white/95 backdrop-blur-sm">
             <CardHeader className="text-center">
               <div className="flex items-center justify-center mb-4">
-                <Lock className="h-12 w-12 text-blue-600" />
+                <Lock className="h-12 w-12 text-green-600" />
               </div>
               <CardTitle className="text-2xl">Project Bolivian Green</CardTitle>
               <CardDescription>
@@ -755,7 +760,7 @@ function BolivianGreenPage({ onBack }) {
                 {error && (
                   <div className="text-red-600 text-sm text-center">{error}</div>
                 )}
-                <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700">
+                <Button type="submit" className="w-full bg-green-600 hover:bg-green-700">
                   Access Project
                 </Button>
                 <Button 
@@ -777,20 +782,20 @@ function BolivianGreenPage({ onBack }) {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="bg-gradient-to-r from-blue-600 to-green-600 text-white py-6">
+      <header className="bg-gradient-to-r from-green-600 to-green-700 text-white py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
               <Cpu className="h-8 w-8 mr-3" />
               <div>
                 <h1 className="text-3xl font-bold">Project Bolivian Green</h1>
-                <p className="text-blue-100">Renewable and Affordable Swiss Bitcoin Mining</p>
+                <p className="text-green-100">Renewable and Affordable Swiss Bitcoin Mining</p>
               </div>
             </div>
             <Button 
               variant="outline" 
               onClick={onBack}
-              className="border-white text-white hover:bg-white hover:text-blue-600"
+              className="border-white text-white hover:bg-white hover:text-green-600"
             >
               Back to Home
             </Button>
@@ -832,16 +837,16 @@ function BolivianGreenPage({ onBack }) {
                   <span>200 MW deployment, $173M capex, 11-month payback, 65% IRR</span>
                 </div>
                 <div className="flex items-center">
-                  <Badge className="bg-blue-600 text-white mr-3">Phase II</Badge>
+                  <Badge className="bg-green-600 text-white mr-3">Phase II</Badge>
                   <span>300 MW expansion, $213M equity, 9-month payback, 65% IRR</span>
                 </div>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-blue-50 to-green-50 p-8 rounded-lg">
+            <div className="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-lg">
               <h4 className="text-xl font-semibold text-gray-900 mb-6">Key Metrics</h4>
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600">500MW</div>
+                  <div className="text-3xl font-bold text-green-600">500MW</div>
                   <div className="text-gray-600">Total Capacity</div>
                 </div>
                 <div className="text-center">
@@ -849,7 +854,7 @@ function BolivianGreenPage({ onBack }) {
                   <div className="text-gray-600">Energy Cost/MWh</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600">65%</div>
+                  <div className="text-3xl font-bold text-green-600">65%</div>
                   <div className="text-gray-600">Target IRR</div>
                 </div>
                 <div className="text-center">
@@ -899,7 +904,7 @@ function BolivianGreenPage({ onBack }) {
             ].map((item, index) => (
               <Card key={index} className="text-center hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <item.icon className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                  <item.icon className="h-12 w-12 text-green-600 mx-auto mb-4" />
                   <CardTitle className="text-xl">{item.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -923,7 +928,7 @@ function BolivianGreenPage({ onBack }) {
                   <tr className="border-b">
                     <th className="pb-4 text-gray-600">Metric</th>
                     <th className="pb-4 text-center">Industry Average</th>
-                    <th className="pb-4 text-center text-blue-600">Steinbock Phase I</th>
+                    <th className="pb-4 text-center text-green-600">Steinbock Phase I</th>
                     <th className="pb-4 text-center text-green-600">Steinbock Phase II</th>
                   </tr>
                 </thead>
@@ -931,25 +936,25 @@ function BolivianGreenPage({ onBack }) {
                   <tr className="border-b">
                     <td className="py-4 font-medium">Electricity Price ($/MWh)</td>
                     <td className="py-4 text-center">$35-52</td>
-                    <td className="py-4 text-center text-blue-600 font-bold">$20-30</td>
+                    <td className="py-4 text-center text-green-600 font-bold">$20-30</td>
                     <td className="py-4 text-center text-green-600 font-bold">$20-30</td>
                   </tr>
                   <tr className="border-b">
                     <td className="py-4 font-medium">Cost to mine 1 BTC</td>
                     <td className="py-4 text-center">$35,376-$52,400</td>
-                    <td className="py-4 text-center text-blue-600 font-bold">$11,765</td>
+                    <td className="py-4 text-center text-green-600 font-bold">$11,765</td>
                     <td className="py-4 text-center text-green-600 font-bold">$11,765</td>
                   </tr>
                   <tr className="border-b">
                     <td className="py-4 font-medium">Corporate Tax Rate</td>
                     <td className="py-4 text-center">17-38%</td>
-                    <td className="py-4 text-center text-blue-600 font-bold">&lt;10%</td>
+                    <td className="py-4 text-center text-green-600 font-bold">&lt;10%</td>
                     <td className="py-4 text-center text-green-600 font-bold">&lt;10%</td>
                   </tr>
                   <tr>
                     <td className="py-4 font-medium">BTC Mined per Year</td>
                     <td className="py-4 text-center">2,812-8,280</td>
-                    <td className="py-4 text-center text-blue-600 font-bold">1,406</td>
+                    <td className="py-4 text-center text-green-600 font-bold">1,406</td>
                     <td className="py-4 text-center text-green-600 font-bold">2,429</td>
                   </tr>
                 </tbody>
@@ -964,7 +969,7 @@ function BolivianGreenPage({ onBack }) {
           <div className="grid md:grid-cols-2 gap-8">
             <Card>
               <CardHeader>
-                <CardTitle className="text-2xl text-blue-600">Phase I - 200MW</CardTitle>
+                <CardTitle className="text-2xl text-green-600">Phase I - 200MW</CardTitle>
                 <CardDescription>Initial deployment and operations</CardDescription>
               </CardHeader>
               <CardContent>
@@ -983,7 +988,7 @@ function BolivianGreenPage({ onBack }) {
                   </div>
                   <div className="flex justify-between">
                     <span>Expected IRR:</span>
-                    <span className="font-semibold text-blue-600">65%</span>
+                    <span className="font-semibold text-green-600">65%</span>
                   </div>
                 </div>
               </CardContent>
@@ -1019,23 +1024,23 @@ function BolivianGreenPage({ onBack }) {
         </section>
 
         {/* Contact Information */}
-        <section className="bg-gradient-to-r from-blue-600 to-green-600 text-white p-8 rounded-lg">
+        <section className="bg-gradient-to-r from-green-600 to-green-700 text-white p-8 rounded-lg">
           <div className="text-center">
             <h2 className="text-3xl font-bold mb-4">Ready to Learn More?</h2>
-            <p className="text-xl text-blue-100 mb-6">
+            <p className="text-xl text-green-100 mb-6">
               Contact our team to discuss this exclusive investment opportunity
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
-                className="bg-white text-blue-600 hover:bg-gray-100"
+                className="bg-white text-green-600 hover:bg-gray-100"
               >
                 Schedule a Meeting
               </Button>
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-blue-600"
+                className="border-white text-white hover:bg-white hover:text-green-600"
               >
                 Request Full Deck
               </Button>
