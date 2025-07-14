@@ -69,8 +69,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
-              <img src={steinbockLogo} alt="Steinbock Digital" className="h-16 w-auto mr-3" />
-              <span className="text-xl font-bold text-gray-900">Steinbock Digital</span>
+              <img src={steinbockLogo} alt="Steinbock Digital" className="h-16 w-auto" />
             </div>
             
             {/* Desktop Navigation */}
